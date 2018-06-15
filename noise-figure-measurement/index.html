@@ -5,13 +5,13 @@
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
     <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
     <meta name=viewport content="width=device-width, initial-scale=1">
-    <title>Temperature Convetor Online &#8211; IE - Resources</title>
-    <meta name="description" content="Convert the temperature between Celsius, Fahrenheit and Kelvin">
-    <meta name="keywords" content="Electronics, temperature, converter, online, celsius, fahrenheit, kelvin">
-    <link rel="canonical" href="https://resources.immortalelectronics.com//temperature-converter-online/">
+    <title>Noise Figure Measurement &#8211; IE - Resources</title>
+    <meta name="description" content="A tool designed to measure the noise figure of cascaded amplifiers">
+    <meta name="keywords" content="Electronics, measure, noise, noise figure, cascade, amplifiers">
+    <link rel="canonical" href="https://resources.immortalelectronics.com//noise-figure-measurement/">
         <!-- Twitter Cards -->
-    <meta name="twitter:title" content="Temperature Convetor Online">
-    <meta name="twitter:description" content="Convert the temperature between Celsius, Fahrenheit and Kelvin">
+    <meta name="twitter:title" content="Noise Figure Measurement">
+    <meta name="twitter:description" content="A tool designed to measure the noise figure of cascaded amplifiers">
     <meta name="twitter:site" content="@immortalelectro">
     <meta name="twitter:creator" content="@immortalelectro">
     <meta name="twitter:card" content="summary">
@@ -19,9 +19,9 @@
     <!-- Open Graph -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Temperature Convetor Online">
-    <meta property="og:description" content="Convert the temperature between Celsius, Fahrenheit and Kelvin">
-    <meta property="og:url" content="https://resources.immortalelectronics.com//temperature-converter-online/">
+    <meta property="og:title" content="Noise Figure Measurement">
+    <meta property="og:description" content="A tool designed to measure the noise figure of cascaded amplifiers">
+    <meta property="og:url" content="https://resources.immortalelectronics.com//noise-figure-measurement/">
     <meta property="og:site_name" content="IE - Resources">
     <meta property="og:image" content="https://resources.immortalelectronics.com//assets/img/ie-resources-logo-2.png">
 
@@ -141,16 +141,16 @@
       <div class="yazilar">
         <div class="yazi">
           <div class="ustr">
-            <h2>Temperature Convetor Online</h2>
+            <h2>Noise Figure Measurement</h2>
             <div class="yazibilgisi">
-              14 Jun 2018 &copy;Immortal Electronics.
+              15 Jun 2018 &copy;Immortal Electronics.
             </div>
           </div>
           <hr>
           <div class="content">
-            <h1 id="temperature-convertor-online">Temperature Convertor Online</h1>
+            <h1 id="noise-figure-measurement">Noise Figure Measurement</h1>
 
-<h2 id="convert-the-temperature-between-celsius-fahrenheit-and-kelvin">Convert the temperature between Celsius, Fahrenheit and Kelvin</h2>
+<h2 id="measure-the-noise-figure-of-cascaded-amplifiers-using-this-tool">Measure the Noise Figure of Cascaded Amplifiers using this tool</h2>
 
 <h3 id="inputs">Inputs</h3>
 
@@ -164,63 +164,22 @@
 
 <td>
 
-<div><label for="att">Select Type</label></div>
+<label for="att" class="control-label">Select number of cascaded amplifiers</label>
 
 </td>
 
 <td>
 
-<div><select class="form-control" id="type">
-<option value="2">Temp Range</option>
-<option value="1">Single Temp</option>
-</select></div>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-<div><label for="in">Input Temperature</label></div>
-
-</td>
-
-<td>
-
-<input type="number" class="form-control" id="in" placeholder="Enter Input" />
-
-</td>
-
-<td>
-
-<label class="text-center">To</label>
-
-</td>
-
-<td>
-
-<div id="toRange"><input type="number" class="form-control" id="in2" placeholder="Enter Input 2" /></div>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-<div><label for="in-unit">Input Type</label></div>
-
-</td>
-
-<td>
-
-<select class="form-control" id="in-unit">
-<option value="1">Fahrenheit (°F)</option>
-<option value="2">Kelvin (°K)</option>
-<option value="3">Celsius (°C)</option>
+<select class="form-control" id="amp">
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
 </select>
 
 </td>
@@ -231,17 +190,63 @@
 
 <td>
 
-<div><label for="out">Output type</label></div>
+
 
 </td>
 
 <td>
 
-<div><select class="form-control" id="out">
-<option value="1">Fahrenheit (°F)</option>
-<option value="2">Kelvin (°K)</option>
-<option value="3">Celsius (°C)</option>
-</select></div>
+Noise (dB)
+
+</td>
+
+<td>
+
+Gain (dB)
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<label for="imp" class="control-label">Stage 1</label>
+
+</td>
+
+<td>
+
+<input type="number" id="noise1" class="form-control" placeholder="Enter Stage 1 Noise" required="" />
+
+</td>
+
+<td>
+
+<input type="number" id="gain1" class="form-control" placeholder="Enter Stage 1 Gain" required="" />
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<label for="imp" class="control-label">Stage 2</label>
+
+</td>
+
+<td>
+
+<input type="number" id="noise2" class="form-control" placeholder="Enter Stage 2 Noise" required="" />
+
+</td>
+
+<td>
+
+<input type="number" id="gain2" class="form-control" placeholder="Enter Stage 2 Gain" required="" />
 
 </td>
 
@@ -253,7 +258,7 @@
 
 </form>
 
-<div><input style="font-size: 18px;" type="button" id="calculate" class="btn btn-theme" value="Calculate" disabled="" /></div>
+<p><input type="button" id="calculate" class="btn btn-theme" value="Calculate" disabled="" /></p>
 
 <h3 id="output">Output</h3>
 
@@ -267,18 +272,39 @@
 
 <td>
 
-<div><label for="answer" class="control-label">Converted Temperature</label></div>
+<label for="total-noise" class="control-label">Total Noise</label>
 
 </td>
 
 <td>
 
-<input type="text" id="answer" class="form-control" placeholder="Output Result" />
+<input type="text" id="total-noise" class="form-control" placeholder="Decibel (dB)" /> (dB) decibel
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<label for="total-gain" class="control-label">Total Gain</label>
+
+</td>
+
+<td>
+
+<input type="text" id="total-gain" class="form-control" placeholder="Decibel (dB)" /> (dB) decibel
+
+</td>
+
+</tr>
 
 <div id="answer-unit"></div>
 
 <script type="text/javascript">
-var _0x7ed2=["\x75\x73\x65\x20\x73\x74\x72\x69\x63\x74","\x76\x61\x6C","\x23\x74\x79\x70\x65","\x68\x69\x64\x65","\x23\x74\x6F\x52\x61\x6E\x67\x65","\x73\x68\x6F\x77","\x31","\x33","\x32","\x68\x61\x73\x2D\x73\x75\x63\x63\x65\x73\x73","\x72\x65\x6D\x6F\x76\x65\x43\x6C\x61\x73\x73","\x64\x69\x76","\x63\x6C\x6F\x73\x65\x73\x74","\x68\x61\x73\x2D\x77\x61\x72\x6E\x69\x6E\x67","\x61\x64\x64\x43\x6C\x61\x73\x73","","\x65\x61\x63\x68","\x23\x61\x6E\x73\x77\x65\x72\x2D\x66\x69\x65\x6C\x64\x73\x20\x3A\x69\x6E\x70\x75\x74","\x23\x63\x61\x6C\x63\x75\x6C\x61\x74\x65","\x68\x61\x73\x2D\x65\x72\x72\x6F\x72","\x64\x69\x73\x61\x62\x6C\x65\x64","\x61\x74\x74\x72","\x69\x73\x4E\x75\x6D\x65\x72\x69\x63","\x23\x74\x6F\x6F\x6C\x2D\x66\x6F\x72\x6D\x20\x3A\x69\x6E\x70\x75\x74","\x6B\x65\x79\x75\x70","\x63\x6C\x69\x63\x6B","\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74","\x23\x69\x6E","\x23\x69\x6E\x2D\x75\x6E\x69\x74","\x23\x6F\x75\x74","\x74\x65\x78\x74","\x23\x61\x6E\x73\x77\x65\x72\x2D\x75\x6E\x69\x74","\x23\x61\x6E\x73\x77\x65\x72","\x74\x6F\x46\x69\x78\x65\x64","\x23\x6F\x75\x74\x20\x3A\x73\x65\x6C\x65\x63\x74\x65\x64","\x23\x69\x6E\x32","\x20\x74\x6F\x20","\x6F\x6E","\x63\x68\x61\x6E\x67\x65"];!function(_0x3c9ax1){_0x7ed2[0];function _0x3c9ax2(){1== _0x3c9ax1(_0x7ed2[2])[_0x7ed2[1]]()?_0x3c9ax1(_0x7ed2[4])[_0x7ed2[3]]():_0x3c9ax1(_0x7ed2[4])[_0x7ed2[5]]()}function _0x3c9ax3(_0x3c9ax1,_0x3c9ax2){switch(_0x3c9ax1){case _0x7ed2[6]:return 5* (_0x3c9ax2- 32)/ 9;case _0x7ed2[7]:return _0x3c9ax2;case _0x7ed2[8]:return _0x3c9ax2- 273.15}}function _0x3c9ax4(_0x3c9ax1,_0x3c9ax2){switch(_0x3c9ax1){case _0x7ed2[6]:return _0x3c9ax2;case _0x7ed2[7]:return 9* _0x3c9ax2/ 5+ 32;case _0x7ed2[8]:return 9* (_0x3c9ax2- 273.15)/ 5+ 32}}function _0x3c9ax5(_0x3c9ax1,_0x3c9ax2){switch(_0x3c9ax1){case _0x7ed2[6]:return 5* (_0x3c9ax2- 32)/ 9+ 273.15;case _0x7ed2[7]:return _0x3c9ax2+ 273.15;case _0x7ed2[8]:return _0x3c9ax2}}function _0x3c9ax6(){_0x3c9ax1(_0x7ed2[17])[_0x7ed2[16]](function(){_0x3c9ax1(this)[_0x7ed2[12]](_0x7ed2[11])[_0x7ed2[10]](_0x7ed2[9]),_0x3c9ax1(this)[_0x7ed2[12]](_0x7ed2[11])[_0x7ed2[14]](_0x7ed2[13]),_0x3c9ax1(this)[_0x7ed2[1]](_0x7ed2[15])})}function _0x3c9ax7(){_0x3c9ax1(_0x7ed2[17])[_0x7ed2[16]](function(){_0x3c9ax1(this)[_0x7ed2[12]](_0x7ed2[11])[_0x7ed2[10]](_0x7ed2[13]),_0x3c9ax1(this)[_0x7ed2[12]](_0x7ed2[11])[_0x7ed2[14]](_0x7ed2[9])})}var _0x3c9ax8,_0x3c9ax9=_0x3c9ax1(_0x7ed2[18]);_0x3c9ax1(_0x7ed2[23])[_0x7ed2[24]](function(){_0x3c9ax1(this)[_0x7ed2[12]](_0x7ed2[11])[_0x7ed2[10]](_0x7ed2[19]),_0x3c9ax6(),_0x3c9ax9[_0x7ed2[21]](_0x7ed2[20],!1),_0x3c9ax1[_0x7ed2[22]](_0x3c9ax1(this)[_0x7ed2[1]]())=== !1?(_0x3c9ax1(this)[_0x7ed2[12]](_0x7ed2[11])[_0x7ed2[14]](_0x7ed2[19]),_0x3c9ax9[_0x7ed2[21]](_0x7ed2[20],!1)):_0x3c9ax1(this)[_0x7ed2[12]](_0x7ed2[11])[_0x7ed2[10]](_0x7ed2[19]),_0x3c9ax8= 0,_0x3c9ax1(_0x7ed2[23])[_0x7ed2[16]](function(){_0x7ed2[15]!= _0x3c9ax1(this)[_0x7ed2[1]]()&& _0x3c9ax1[_0x7ed2[22]](_0x3c9ax1(this)[_0x7ed2[1]]())!== !1|| _0x3c9ax8++}),_0x3c9ax8> 0&& _0x3c9ax9[_0x7ed2[21]](_0x7ed2[20],!0)}),_0x3c9ax9[_0x7ed2[37]](_0x7ed2[25],function(_0x3c9ax2){_0x3c9ax2[_0x7ed2[26]]();var _0x3c9ax6,_0x3c9ax8,_0x3c9ax9,_0x3c9axa,_0x3c9axb,_0x3c9axc;_0x3c9ax9= parseFloat(_0x3c9ax1(_0x7ed2[27])[_0x7ed2[1]]()),_0x3c9axc= _0x3c9ax1(_0x7ed2[28])[_0x7ed2[1]](),_0x3c9axa= _0x3c9ax1(_0x7ed2[29])[_0x7ed2[1]](),_0x3c9ax6= 0,_0x3c9ax1(_0x7ed2[31])[_0x7ed2[30]](_0x7ed2[15]),_0x3c9ax1(_0x7ed2[32])[_0x7ed2[1]](_0x7ed2[15]),_0x3c9ax6= 1== _0x3c9axa?_0x3c9ax4(_0x3c9axc,_0x3c9ax9):3== _0x3c9axa?_0x3c9ax3(_0x3c9axc,_0x3c9ax9):_0x3c9ax5(_0x3c9axc,_0x3c9ax9),_0x3c9ax1(_0x7ed2[32])[_0x7ed2[1]](parseFloat(_0x3c9ax6)[_0x7ed2[33]](2)),_0x3c9ax1(_0x7ed2[31])[_0x7ed2[30]](_0x3c9ax1(_0x7ed2[34])[_0x7ed2[30]]()),2== _0x3c9ax1(_0x7ed2[2])[_0x7ed2[1]]()&& (_0x3c9axb= parseFloat(_0x3c9ax1(_0x7ed2[35])[_0x7ed2[1]]()),_0x3c9ax8= 1== _0x3c9axa?_0x3c9ax4(_0x3c9axc,_0x3c9axb):3== _0x3c9axa?_0x3c9ax3(_0x3c9axc,_0x3c9axb):_0x3c9ax5(_0x3c9axc,_0x3c9axb),_0x3c9ax1(_0x7ed2[32])[_0x7ed2[1]](parseFloat(_0x3c9ax6)[_0x7ed2[33]](2)+ _0x7ed2[36]+ parseFloat(_0x3c9ax8)[_0x7ed2[33]](2)),_0x3c9ax1(_0x7ed2[31])[_0x7ed2[30]](_0x3c9ax1(_0x7ed2[34])[_0x7ed2[30]]())),_0x3c9ax7()}),_0x3c9ax2(),_0x3c9ax1(_0x7ed2[31])[_0x7ed2[30]](_0x7ed2[15]),_0x3c9ax1(_0x7ed2[28])[_0x7ed2[37]](_0x7ed2[38],function(){_0x3c9ax6(),_0x3c9ax1(_0x7ed2[31])[_0x7ed2[30]](_0x7ed2[15]),_0x3c9ax2()}),_0x3c9ax1(_0x7ed2[29])[_0x7ed2[37]](_0x7ed2[38],function(){_0x3c9ax6(),_0x3c9ax1(_0x7ed2[31])[_0x7ed2[30]](_0x7ed2[15]),_0x3c9ax2()}),_0x3c9ax1(_0x7ed2[2])[_0x7ed2[37]](_0x7ed2[38],function(){_0x3c9ax6(),_0x3c9ax1(_0x7ed2[31])[_0x7ed2[30]](_0x7ed2[15]),_0x3c9ax2()})}(jQuery)</script></td></tr></tbody></table></div>
+var _0xb17e=["\x75\x73\x65\x20\x73\x74\x72\x69\x63\x74","\x68\x61\x73\x2D\x73\x75\x63\x63\x65\x73\x73","\x72\x65\x6D\x6F\x76\x65\x43\x6C\x61\x73\x73","\x64\x69\x76","\x63\x6C\x6F\x73\x65\x73\x74","\x68\x61\x73\x2D\x77\x61\x72\x6E\x69\x6E\x67","\x61\x64\x64\x43\x6C\x61\x73\x73","","\x76\x61\x6C","\x65\x61\x63\x68","\x23\x61\x6E\x73\x77\x65\x72\x2D\x66\x69\x65\x6C\x64\x73\x20\x3A\x69\x6E\x70\x75\x74","\x23\x63\x61\x6C\x63\x75\x6C\x61\x74\x65","\x68\x61\x73\x2D\x65\x72\x72\x6F\x72","\x64\x69\x73\x61\x62\x6C\x65\x64","\x61\x74\x74\x72","\x69\x73\x4E\x75\x6D\x65\x72\x69\x63","\x23\x74\x6F\x6F\x6C\x2D\x66\x6F\x72\x6D\x20\x3A\x69\x6E\x70\x75\x74","\x6B\x65\x79\x75\x70","\x63\x6C\x69\x63\x6B","\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74","\x23\x61\x6D\x70","\x23\x6E\x6F\x69\x73\x65","\x70\x6F\x77","\x23\x67\x61\x69\x6E","\x6C\x6F\x67\x31\x30","\x23\x74\x6F\x74\x61\x6C\x2D\x6E\x6F\x69\x73\x65","\x23\x74\x6F\x74\x61\x6C\x2D\x67\x61\x69\x6E","\x6F\x6E","\x63\x68\x61\x6E\x67\x65","\x65\x6D\x70\x74\x79","\x23\x73\x74\x61\x67\x65\x2D\x69\x6E\x70\x75\x74\x73","\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x63\x6F\x6C\x2D\x73\x6D\x2D\x31\x32\x22\x3E\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x63\x6F\x6C\x2D\x73\x6D\x2D\x34\x22\x3E\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x66\x6F\x72\x6D\x2D\x67\x72\x6F\x75\x70\x22\x3E\x3C\x6C\x61\x62\x65\x6C\x20\x66\x6F\x72\x3D\x22\x69\x6D\x70\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x63\x6F\x6E\x74\x72\x6F\x6C\x2D\x6C\x61\x62\x65\x6C\x22\x3E\x53\x74\x61\x67\x65\x20","\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x3C\x2F\x64\x69\x76\x3E\x3C\x2F\x64\x69\x76\x3E\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x63\x6F\x6C\x2D\x73\x6D\x2D\x34\x22\x3E\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x66\x6F\x72\x6D\x2D\x67\x72\x6F\x75\x70\x22\x3E\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x22\x6E\x75\x6D\x62\x65\x72\x22\x20\x69\x64\x3D\x22\x6E\x6F\x69\x73\x65","\x22\x20\x63\x6C\x61\x73\x73\x3D\x22\x66\x6F\x72\x6D\x2D\x63\x6F\x6E\x74\x72\x6F\x6C\x22\x20\x70\x6C\x61\x63\x65\x68\x6F\x6C\x64\x65\x72\x3D\x22\x45\x6E\x74\x65\x72\x20\x53\x74\x61\x67\x65\x20","\x20\x4E\x6F\x69\x73\x65\x22\x20\x72\x65\x71\x75\x69\x72\x65\x64\x20\x20\x2F\x3E\x3C\x2F\x64\x69\x76\x3E\x3C\x2F\x64\x69\x76\x3E\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x63\x6F\x6C\x2D\x73\x6D\x2D\x34\x22\x3E\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x66\x6F\x72\x6D\x2D\x67\x72\x6F\x75\x70\x22\x3E\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x22\x6E\x75\x6D\x62\x65\x72\x22\x20\x69\x64\x3D\x22\x67\x61\x69\x6E","\x20\x47\x61\x69\x6E\x22\x20\x72\x65\x71\x75\x69\x72\x65\x64\x20\x20\x2F\x3E\x3C\x2F\x64\x69\x76\x3E\x3C\x2F\x64\x69\x76\x3E\x3C\x2F\x64\x69\x76\x3E","\x61\x70\x70\x65\x6E\x64"];!function(_0x1620x1){_0xb17e[0];function _0x1620x2(){_0x1620x1(_0xb17e[10])[_0xb17e[9]](function(){_0x1620x1(this)[_0xb17e[4]](_0xb17e[3])[_0xb17e[2]](_0xb17e[1]),_0x1620x1(this)[_0xb17e[4]](_0xb17e[3])[_0xb17e[6]](_0xb17e[5]),_0x1620x1(this)[_0xb17e[8]](_0xb17e[7])})}function _0x1620x3(){_0x1620x1(_0xb17e[10])[_0xb17e[9]](function(){_0x1620x1(this)[_0xb17e[4]](_0xb17e[3])[_0xb17e[2]](_0xb17e[5]),_0x1620x1(this)[_0xb17e[4]](_0xb17e[3])[_0xb17e[6]](_0xb17e[1])})}var _0x1620x4,_0x1620x5=_0x1620x1(_0xb17e[11]);_0x1620x1(_0xb17e[16])[_0xb17e[17]](function(){_0x1620x1(this)[_0xb17e[4]](_0xb17e[3])[_0xb17e[2]](_0xb17e[12]),_0x1620x2(),_0x1620x5[_0xb17e[14]](_0xb17e[13],!1),_0x1620x1[_0xb17e[15]](_0x1620x1(this)[_0xb17e[8]]())=== !1?(_0x1620x1(this)[_0xb17e[4]](_0xb17e[3])[_0xb17e[6]](_0xb17e[12]),_0x1620x5[_0xb17e[14]](_0xb17e[13],!1)):_0x1620x1(this)[_0xb17e[4]](_0xb17e[3])[_0xb17e[2]](_0xb17e[12]),_0x1620x4= 0,_0x1620x1(_0xb17e[16])[_0xb17e[9]](function(){_0xb17e[7]!= _0x1620x1(this)[_0xb17e[8]]()&& _0x1620x1[_0xb17e[15]](_0x1620x1(this)[_0xb17e[8]]())!== !1|| _0x1620x4++}),_0x1620x4> 0&& _0x1620x5[_0xb17e[14]](_0xb17e[13],!0)}),_0x1620x5[_0xb17e[27]](_0xb17e[18],function(_0x1620x2){_0x1620x2[_0xb17e[19]]();var _0x1620x4,_0x1620x5,_0x1620x6,_0x1620x7,_0x1620x8=_0x1620x1(_0xb17e[20])[_0xb17e[8]](),_0x1620x9=[],_0x1620xa=[],_0x1620xb=0,_0x1620xc=1,_0x1620xd=1;for(_0x1620x4= 1;_0x1620x8>= _0x1620x4;_0x1620x4++){_0x1620x9[_0x1620x4]= Math[_0xb17e[22]](10,_0x1620x1(_0xb17e[21]+ _0x1620x4)[_0xb17e[8]]()/ 10),_0x1620xa[_0x1620x4]= Math[_0xb17e[22]](10,_0x1620x1(_0xb17e[23]+ _0x1620x4)[_0xb17e[8]]()/ 10),_0x1620xb+= 10* Math[_0xb17e[24]](_0x1620xa[_0x1620x4])};for(_0x1620x5= 1;_0x1620x8>= _0x1620x5;_0x1620x5++){_0x1620x7= _0x1620x9[_0x1620x5],_0x1620xc= _0x1620xa[_0x1620x5]* _0x1620xc,_0x1620xd+= _0x1620x7/ _0x1620xc};_0x1620x6= 10* Math[_0xb17e[24]](_0x1620x9[1]+ _0x1620xd),_0x1620x1(_0xb17e[25])[_0xb17e[8]](_0x1620x6),_0x1620x1(_0xb17e[26])[_0xb17e[8]](_0x1620xb),_0x1620x3()}),_0x1620x1(_0xb17e[20])[_0xb17e[27]](_0xb17e[28],function(){_0x1620x1(_0xb17e[30])[_0xb17e[29]]();var _0x1620x3,_0x1620x6,_0x1620x7=1,_0x1620x8=_0xb17e[7],_0x1620x9=_0x1620x1(_0xb17e[20])[_0xb17e[8]]();for(_0x1620x6= 1;_0x1620x9>= _0x1620x6;_0x1620x6++){_0x1620x3= _0xb17e[31]+ _0x1620x7+ _0xb17e[32]+ _0x1620x7+ _0xb17e[33]+ _0x1620x7+ _0xb17e[34]+ _0x1620x7+ _0xb17e[33]+ _0x1620x7+ _0xb17e[35],_0x1620x8+= _0x1620x3,_0x1620x7++};_0x1620x1(_0xb17e[30])[_0xb17e[36]](_0x1620x8),_0x1620x1(_0xb17e[16])[_0xb17e[17]](function(){_0x1620x1(this)[_0xb17e[4]](_0xb17e[3])[_0xb17e[2]](_0xb17e[12]),_0x1620x2(),_0x1620x5[_0xb17e[14]](_0xb17e[13],!1),_0x1620x1[_0xb17e[15]](_0x1620x1(this)[_0xb17e[8]]())=== !1?(_0x1620x1(this)[_0xb17e[4]](_0xb17e[3])[_0xb17e[6]](_0xb17e[12]),_0x1620x5[_0xb17e[14]](_0xb17e[13],!1)):_0x1620x1(this)[_0xb17e[4]](_0xb17e[3])[_0xb17e[2]](_0xb17e[12]),_0x1620x4= 0,_0x1620x1(_0xb17e[16])[_0xb17e[9]](function(){_0xb17e[7]!= _0x1620x1(this)[_0xb17e[8]]()&& _0x1620x1[_0xb17e[15]](_0x1620x1(this)[_0xb17e[8]]())!== !1|| _0x1620x4++}),_0x1620x4> 0&& _0x1620x5[_0xb17e[14]](_0xb17e[13],!0)})})}(jQuery)
+</script></tbody></table></div>
 
 <h2 id="overview">Overview</h2>
 
